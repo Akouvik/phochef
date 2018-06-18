@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PhoChef</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <style media="screen">
+  h1{
+    color: #eb9626;
+  }
+    .menu{
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 17px;
+      margin-top: 15px;
+      /* position: fixed; */
+    }
+    .menu a{
+      /* display: inline-block; */
+      float: left;
+      color: #f35659;
+      padding: 0 2em;
+      font-size: 20px;
+      letter-spacing: 2px;
+      text-decoration: underline;
+    }
+    #input{
+      height: 22px
+    }
+    i{
+    position: absolute;
+    font-size: 16px;
+    top: 30px;
+    color: #f35659;
+    left: 557px;
+   }
+    #fixed_banner{
+    background: mistyrose;
+    height: 30px;
+    }
+    #welcome_message{
+      outline: #eb9626 solid 1px;
+      outline-offset: -12px;
+      width: 50%;
+      margin: 0 auto;
+      /* height: 95%; */
+      position: relative;
+      top: 265px;
+      font-weight: bolder;
+      min-height: 198px;
+      max-height: 226px;
+      max-width: 94%;
+    }
+    #welcome_message p {
+      /* background-color: gray; */
+      padding: 3%;
+      color: wheat;
+      letter-spacing:3px;
+      text-align: center;
+     font-size: 19px;
+    }
+    /* #welcome_message p span{
+      opacity: 1;
+    } */
+
+    .food_bg{
+    background-image: url(images/bg/appetizer.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 50%;
+    /* background-position: center; */
+    /* height: 1080px; */
+    background-size: 100%;
+    height: 880px;
+    box-shadow: 0px -9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    }
+    .places{
+      /* background-color: #eb9626; */
+      width: 100%;
+      height: 90px;
+    }
+    .country-options{
+      text-align: center;
+      position: relative;
+      top: -6px;
+    }
+    .countries{
+      display: inline-block;
+      margin: 5px;
+      width: 75px;
+      height: 72px;
+      border-radius: 50%;
+      /* background-color: red; */
+    }
+    .country-options span{
+       letter-spacing: 2px
+    }
+    img {
+    width: 100%;
+    /* height: auto; */
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    }
+  .ita{
+    position: relative;
+    /* top: -1px; */
+    height: 74px;
+    }
+    .country-options a{
+      text-decoration: none;
+      color: black;
+    }
+    footer{
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="menu">
+        <h1>PhoChef</h1>
+
+        <a href="#">Food</a>
+        <a href="#">Drinks</a>
+        <a href="#">Desert</a>
+        <form class="search_form" action="index.html" method="post">
+          <i class="fas fa-search"></i>
+          <input type="text" name="search" size="40" id="input">
+        </form>
+        <a href="#">Sign Up</a>
+        <a href="#">Log In</a>
+      <!-- </div> -->
+    </div>
+    <div class="places">
+      <div class="country-options">
+        <a href="#">
+          <div class="countries"><img src="images/american/pot-roast.jpg" alt="delicious pot-roast"></div><span>American</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img src="images/mexican/shrimp-rice.jpg" alt="mexican"></div><span>Mexican</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img src="images/greek/salad.jpg" alt=""></div><span>Greek</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img class="ita" src="images/italian/bonci.jpg" alt=""></div><span>Italian</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img class="ita" src="images/african/egusi.jpg" alt=""></div><span>African</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img class="ita" src="images/thai/tom-yum.jpg" alt=""></div><span>Thai</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img class="ita" src="images/russian/red-caviar.jpg" alt=""></div><span>Russian</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img src="images/mexican/shrimp-rice.jpg" alt=""></div><span>Carribean</span>
+        </a>
+        <a href="#">
+          <div class="countries"><img src="images/mexican/shrimp-rice.jpg" alt=""></div><span>French</span>
+        </a>
+
+      </div>
+
+    </div>
+    <div class="food_bg">
+      <div id="welcome_message">
+        <p><span>WELCOME to PHOCHEF, we offer you recipes from various places around the world. Just choose where you'd like dine and receive top dishes and recipes from that country. </span></p>
+      </div>
+    </div>
+    <footer>
+      <h1>Media Links</h1>
+    </footer>
+  </body>
+</html>
